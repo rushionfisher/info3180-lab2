@@ -1,0 +1,49 @@
+{% extends "base.html" %} 
+
+{% block main %}
+	<div class="prof-container">
+	  <div class="page-wrapper">
+	    <div class="page-header">
+	      <img
+	        src="{{ url_for('static', filename='profile.jpg') }}"
+	        alt=""
+	        class="profile-img"
+	      />
+	      <h2 id="my-name">Rushion Fisher</h2>
+	      <p id="socialmedia">@rvshixn_</p>
+	      <p>Kingston, Jamaica</p>
+	      <p>Joined {{ d1 }}</p>
+	    </div>
+	    <div class="page-body">
+	      <p class="page-text">
+	        I am an intellectual individual who enjoys learning new things, especially about computers.
+            If you need an individual who shows enthusiasm and initiative, I'm your guy.
+            
+	      </p>
+	      <div id="social-status">
+	        <ul class="social-med">
+	          <li>
+	            <h3>11</h3>
+	          </li>
+	          <li class="records">Posts</li>
+	        </ul>
+	        <ul class="social-med">
+	          <li>
+	            <h3>88</h3>
+	          </li>
+	          <li class="record">Following</li>
+	        </ul>
+	        <ul class="social-med">
+	          <li>
+	            <h3>3.8M</h3>
+	          </li>
+	          <li class="record">Followers</li>
+	        </ul>
+	      </div>
+	      <button id="follow">Follow Me</button>
+	    </div>
+	  </div>
+	
+
+	  {% endblock %}
+	</div>
